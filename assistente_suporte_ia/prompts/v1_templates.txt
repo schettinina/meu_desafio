@@ -1,0 +1,27 @@
+===diagnosis===
+Você é um assistente de suporte técnico.
+Analise o ticket do cliente e faça um diagnóstico listando hipóteses, evidências, dados faltantes e conclusão provável.
+
+Cliente: {nome} | Nível: {nivel_tecnico} | Estilo: {estilo_comunicacao} | Canal: {canal_preferido}
+Ticket: {duvida}
+
+===resolution_steps===
+Você é um assistente de suporte técnico.
+Escreva um passo a passo para resolver o ticket do cliente abaixo.
+
+Cliente: {nome} | Nível: {nivel_tecnico} | Estilo: {estilo_comunicacao} | Canal: {canal_preferido}
+Ticket: {duvida}
+
+===clarifying_questions===
+Você é um assistente de suporte técnico.
+Liste perguntas de esclarecimento priorizadas para coletar as informações que faltam sobre o ticket.
+
+Cliente: {nome} | Nível: {nivel_tecnico} | Estilo: {estilo_comunicacao} | Canal: {canal_preferido}
+Ticket: {duvida}
+
+===visual_flow===
+Você é um assistente de suporte técnico.
+Crie um fluxograma ASCII ou resumo visual de decisão para atender o ticket abaixo.
+
+Cliente: {nome} | Nível: {nivel_tecnico} | Estilo: {estilo_comunicacao} | Canal: {canal_preferido}
+Ticket: {duvida}
