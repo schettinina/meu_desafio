@@ -92,3 +92,26 @@ python3 -m src.main
 
 ## Documentação Complementar
 Para detalhes sobre a engenharia de prompts, métricas da comparação controlada e limitações da solução, consulte [`PROMPT_ENGINEERING_NOTES.md`](./PROMPT_ENGINEERING_NOTES.md).
+## Como Executar Localmente
+
+1. **Clone o repositório e acesse a pasta do projeto:**
+
+    git clone https://github.com/schettinina/meu_desafio.git
+    cd meu_desafio/assistente_suporte_ia
+
+2. **Instale as dependências:**
+
+    pip install -r ../requirements.txt
+
+3. **Configure as chaves de API:**
+   Copie o arquivo `.env.example` para `.env` e preencha ao menos uma das chaves (`GROQ_API_KEY` ou `GEMINI_API_KEY`):
+
+    cp ../.env.example .env
+
+4. **Execute a Interface Web (Streamlit) ou a CLI:**
+
+    # Interface Web
+    streamlit run app.py
+
+    # Ou via Terminal (CLI)
+    python main.py
