@@ -4,7 +4,12 @@ from google import genai
 from google.genai import types
 from openai import OpenAI
 
-load_dotenv()
+# override=False garante que os Secrets do Streamlit Cloud não sejam apagados
+load_dotenv(override=False)
+
+# Dentro da função que chama as APIs, leia sempre com os.getenv:
+groq_key = os.getenv("GROQ_API_KEY")
+gemini_key = os.getenv("GEMINI_API_KEY")
 
 
 def _chamar_groq(prompt: str, exigir_json: bool = False) -> tuple[str, str]:

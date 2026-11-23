@@ -4,6 +4,15 @@ from pathlib import Path
 from datetime import datetime
 import streamlit as st
 
+for chave in ("GROQ_API_KEY", "GEMINI_API_KEY"):
+    try:
+        valor = st.secrets.get(chave)
+        if valor:
+            os.environ[chave] = str(valor).strip()
+    except Exception:
+        pass
+
+from src.llm_client import gerar_resposta
 # Garante que os imports relativos e caminhos de dados funcionem tanto localmente quanto no Streamlit Cloud
 BASE_DIR = Path(__file__).resolve().parent
 os.chdir(BASE_DIR)
