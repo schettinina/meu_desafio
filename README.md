@@ -3,7 +3,11 @@
 Aplicação CLI em Python que utiliza **Engenharia de Prompt** para adaptar diagnósticos, passos de resolução, perguntas de triagem e fluxos visuais ao perfil técnico, estilo de comunicação e canal de atendimento de cada cliente.
 
 ---
+**Aplicação Online (Demo Interativa):** [Acessar Assistente no Streamlit Cloud](https://meudesafio-bvsatqu8gozbfzjm5k6fcf.streamlit.app/)
 
+Aplicação em Python (**CLI** e **Interface Web Streamlit**) que utiliza **Engenharia de Prompt** para adaptar diagnósticos técnicos, passos de resolução, perguntas de triagem e fluxos visuais ao perfil técnico, estilo de comunicação e canal preferido de cada cliente.
+
+---
 ## Funcionalidades Principais
 
 - **Perfis de Cliente Configuráveis (`data/profiles.json`):** 5 perfis pré-cadastrados combinando níveis técnicos (`leigo`, `intermediário`, `avançado`), estilos (`direto`, `detalhado`, `didático`) e canais (`chat`, `e-mail`, `telefone`).
